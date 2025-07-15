@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Shammah Integrity Prayer Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #003366, #808080);
+      color: white;
+      padding: 20px;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffd700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .contact-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-container h2 {
+      color: #003366;
+    }
+
+    .contact-container p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #003366;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #0055aa;
+    }
+
+    .contact-details {
+      margin-top: 30px;
+    }
+
+    .contact-details p {
+      margin: 5px 0;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    /* ✅ Responsive Adjustments - maintain original look */
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+
+      nav ul li {
+        width: 100%;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 5px 0;
+      }
+
+      .contact-container {
+        margin: 20px 10px;
+        padding: 15px;
+      }
+
+      input, textarea, button {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 1.3rem;
+      }
+
+      .contact-container h2 {
+        font-size: 1.4rem;
+      }
+
+      button {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <h1 class="logo">Shammah Integrity Prayer Centre</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sermons.html">Sermons</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="giving.html">Giving</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, prayer requests, or need assistance, feel free to reach out. We’re here to connect with you.</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-details">
+      <h3>Church Contact Info</h3>
+      <p><strong>Location:</strong> Luanda Town, Vihiga County</p>
+      <p><strong>Phone:</strong> +254 700 123456</p>
+      <p><strong>Email:</strong> info@shammahchurch.org</p>
+      <p><strong>Office Hours:</strong> Mon – Fri, 9:00AM – 5:00PM</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Shammah Integrity Prayer Centre. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

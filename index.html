@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shammah Integrity Prayer Centre | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #003366, #808080);
+      padding: 20px;
+      color: #fff;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-container img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #ffd700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      background: url('images/hero.jpg') no-repeat center center/cover;
+      color: #003366;
+      padding: 120px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-overlay {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 40px 20px;
+      border-radius: 12px;
+      display: inline-block;
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      color: #666;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .cta-buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons a {
+      padding: 12px 24px;
+      background-color: #003366;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #ffd700;
+      color: #003366;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    @media (max-width: 1024px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+    }
+
+    .cta-buttons a {
+      font-size: 0.95rem;
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .logo-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      text-align: center;
+    }
+
+    .logo-container img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+    }
+
+    .hero {
+      padding: 80px 15px;
+    }
+
+    .hero-overlay {
+      padding: 30px 15px;
+    }
+
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+
+    .hero p {
+      font-size: 0.95rem;
+    }
+
+    .section {
+      padding: 40px 15px;
+    }
+
+    .cta-buttons {
+      gap: 12px;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .nav-container {
+      align-items: center;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      padding: 0;
+    }
+
+    .hero-overlay {
+      max-width: 90%;
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cta-buttons a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="images/church-logo.png" alt="Church Logo" />
+        <h1 class="logo">Shammah Integrity Prayer Centre</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sermons.html">Sermons</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="giving.html">Giving</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Welcome to Shammah Integrity Prayer Centre</h1>
+      <p>Where the presence of God dwells and lives are transformed. Join us this Sunday and experience the power of His Word.</p>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="section">
+    <h2>Our Vision & Mission</h2>
+    <p>We exist to glorify God, edify the believers, and reach the world with the love and truth of Jesus Christ. Our mission is to raise a prayerful, holy, and empowered people, full of integrity and purpose.</p>
+    
+    <div class="cta-buttons">
+      <a href="sermons.html">Watch Sermons</a>
+      <a href="events.html">Upcoming Events</a>
+      <a href="giving.html">Give Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shammah Integrity Prayer Centre. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

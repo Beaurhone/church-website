@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | Shammah Integrity Prayer Centre</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #003366, #808080);
+      color: #fff;
+      padding: 20px;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffd700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .events-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .event-block {
+      margin-bottom: 60px;
+    }
+
+    .event-block h3 {
+      color: #003366;
+      margin-bottom: 5px;
+    }
+
+    .event-block p {
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .event-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .event-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .event-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    /* LIGHTBOX STYLES */
+    .lightbox {
+      position: fixed;
+      display: none;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border: 5px solid white;
+      border-radius: 8px;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    /* RESPONSIVE STYLES */
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 0;
+      }
+
+      nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .logo {
+        font-size: 1.2rem;
+      }
+
+      .event-block {
+        margin-bottom: 40px;
+      }
+
+      .event-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+      }
+
+      .events-container {
+        padding: 10px;
+      }
+
+      .lightbox img {
+        max-width: 95%;
+        max-height: 70%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <h1 class="logo">Shammah Integrity Prayer Centre</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sermons.html">Sermons</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="giving.html">Giving</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="events-container">
+    <!-- Men’s Service -->
+    <section class="event-block">
+      <h3>Men’s Service</h3>
+      <p>Held in June 2025</p>
+      <div class="event-gallery">
+        <a href="#img1"><img src="images/mens_1.jpg" alt="Men's Service 1"></a>
+        <a href="#img2"><img src="images/mens_2.jpg" alt="Men's Service 2"></a>
+        <a href="#img3"><img src="images/mens_3.jpg" alt="Men's Service 3"></a>
+      </div>
+    </section>
+
+    <!-- Turnaround Service -->
+    <section class="event-block">
+      <h3>Turnaround Service</h3>
+      <p>Breakthrough Worship Gathering</p>
+      <div class="event-gallery">
+        <a href="#img4"><img src="images/turnaround_1.jpg" alt="Turnaround 1"></a>
+        <a href="#img5"><img src="images/turnaround_2.jpg" alt="Turnaround 2"></a>
+        <a href="#img6"><img src="images/turnaround_3.jpg" alt="Turnaround 3"></a>
+      </div>
+    </section>
+
+    <!-- Groundbreaking Service -->
+    <section class="event-block">
+      <h3>Groundbreaking Ceremony</h3>
+      <p>Marking a new chapter in our ministry's growth</p>
+      <div class="event-gallery">
+        <a href="#img7"><img src="images/groundbreaking_1.jpg" alt="Groundbreaking 1"></a>
+        <a href="#img8"><img src="images/groundbreaking_2.jpg" alt="Groundbreaking 2"></a>
+        <a href="#img9"><img src="images/groundbreaking_3.jpg" alt="Groundbreaking 3"></a>
+        <a href="#img10"><img src="images/groundbreaking_4.jpg" alt="Groundbreaking 4"></a>
+        <a href="#img11"><img src="images/groundbreaking_5.jpg" alt="Groundbreaking 5"></a>
+      </div>
+    </section>
+  </div>
+
+  <!-- LIGHTBOX MODAL IMAGES -->
+  <div id="img1" class="lightbox"><img src="images/mens_1.jpg"></div>
+  <div id="img2" class="lightbox"><img src="images/mens_2.jpg"></div>
+  <div id="img3" class="lightbox"><img src="images/mens_3.jpg"></div>
+  <div id="img4" class="lightbox"><img src="images/turnaround_1.jpg"></div>
+  <div id="img5" class="lightbox"><img src="images/turnaround_2.jpg"></div>
+  <div id="img6" class="lightbox"><img src="images/turnaround_3.jpg"></div>
+  <div id="img7" class="lightbox"><img src="images/groundbreaking_1.jpg"></div>
+  <div id="img8" class="lightbox"><img src="images/groundbreaking_2.jpg"></div>
+  <div id="img9" class="lightbox"><img src="images/groundbreaking_3.jpg"></div>
+  <div id="img10" class="lightbox"><img src="images/groundbreaking_4.jpg"></div>
+  <div id="img11" class="lightbox"><img src="images/groundbreaking_5.jpg"></div>
+
+  <footer>
+    <p>&copy; 2025 Shammah Integrity Prayer Centre. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
