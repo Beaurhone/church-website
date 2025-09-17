@@ -1,4 +1,8 @@
 /* RESET & BASE */
+:root {
+  --primary-blue: #003366;
+  --accent-gold: #FFD700;
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +17,7 @@ body {
 
 /* NAVIGATION */
 header {
-  background-color: #003366;
+  background-color: var(--primary-blue);
   padding: 10px 0;
 }
 .nav-container {
@@ -25,7 +29,7 @@ header {
   align-items: center;
 }
 .logo {
-  color: #FFD700;
+  color: var(--accent-gold);
   font-size: 24px;
 }
 nav ul {
@@ -39,7 +43,7 @@ nav ul li a {
   font-weight: bold;
 }
 nav ul li a:hover {
-  color: #FFD700;
+  color: var(--accent-gold);
 }
 
 /* HERO SECTION */
@@ -57,7 +61,7 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 .hero-text h2 {
-  color: #FFD700;
+  color: var(--accent-gold);
   font-size: 36px;
 }
 .hero-text p {
@@ -72,7 +76,7 @@ nav ul li a:hover {
   text-align: center;
 }
 .about-preview h3 {
-  color: #003366;
+  color: var(--primary-blue);
   margin-bottom: 10px;
 }
 .about-preview p {
@@ -82,7 +86,7 @@ nav ul li a:hover {
 
 /* FOOTER */
 footer {
-  background-color: #003366;
+  background-color: var(--primary-blue);
   color: #ffffff;
   text-align: center;
   padding: 20px;
@@ -93,7 +97,7 @@ footer {
   text-align: center;
 }
 .gallery-section h2 {
-  color: #003366;
+  color: var(--primary-blue);
   margin-bottom: 10px;
 }
 .gallery-section p {
